@@ -1,0 +1,113 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    color: #fff;
+}
+
+.stopwatch-container {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 30px 40px;
+    border-radius: 15px;
+    box-shadow: 0 8px 30px rgba(0,0,0,0.6);
+    text-align: center;
+    width: 350px;
+}
+
+h1 {
+    margin-bottom: 20px;
+    color: #f0f0f0;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+#display {
+    font-size: 3em;
+    font-weight: 900;
+    margin-bottom: 30px;
+    color: #ffeb3b;
+    font-variant-numeric: tabular-nums;
+    text-shadow: 0 0 10px #ffeb3b;
+}
+
+.buttons {
+    margin-bottom: 25px;
+}
+
+button {
+    border: none;
+    color: white;
+    padding: 14px 22px;
+    margin: 0 8px;
+    border-radius: 30px;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(255, 255, 255, 0.2);
+    font-weight: 600;
+}
+
+button:disabled {
+    background-color: #555;
+    cursor: not-allowed;
+    box-shadow: none;
+    color: #bbb;
+}
+
+#startBtn {
+    background-color: #4caf50;
+}
+
+#startBtn:hover:not(:disabled) {
+    background-color: #45a049;
+    box-shadow: 0 6px 20px #4caf50;
+}
+
+#pauseBtn {
+    background-color: #f44336;
+}
+
+#pauseBtn:hover:not(:disabled) {
+    background-color: #da190b;
+    box-shadow: 0 6px 20px #f44336;
+}
+
+#resetBtn {
+    background-color: #2196f3;
+}
+
+#resetBtn:hover:not(:disabled) {
+    background-color: #0b7dda;
+    box-shadow: 0 6px 20px #2196f3;
+}
+
+#lapBtn {
+    background-color: #ff9800;
+}
+
+#lapBtn:hover:not(:disabled) {
+    background-color: #e68a00;
+    box-shadow: 0 6px 20px #ff9800;
+}
+
+#laps {
+    list-style: none;
+    padding: 0;
+    max-height: 180px;
+    overflow-y: auto;
+    border-top: 1px solid #444;
+    margin-top: 10px;
+}
+
+#laps li {
+    padding: 10px 0;
+    border-bottom: 1px solid #555;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.1em;
+    color: #ddd;
+    text-shadow: 0 0 3px #000;
+}
